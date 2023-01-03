@@ -23,13 +23,46 @@
     margin: 50px;
     padding: 20px;
 }
+#lesson4 {
+    margin: 30px;
+    padding: 30px;
+}
 #l3p1 {
     background-color: antiquewhite;
 }
 #l3p2 {
     background-image: linear-gradient(red, yellow);
 }
+p.dotted {
+    border-style: dotted;
+    border-width: thick;
+    border-color: red green blue yellow; /*top, right, bottom, left*/
+}
+p.dashed {
+    border-style: dashed;
+    border-width: medium;
+    border-color: #ff0000;
+}
+p.solid {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(255, 0, 0);
+}
+p.sides {
+    border-top-style: dotted;
+    border-right-style: dashed;
+    border-bottom-style: solid;
+    border-left-style: double;
+}
+p.shorthand-border {
+    border: 5px solid red; /* border width, border style and border color */
+}
+p.rounded {
+    border: 2px solid red;
+    border-radius: 5px;
+}
 </style>
+
 <div id="profile-div">
     <h1 id="nickname">Nickname: Yohan/Lulu</h1>
     <p style="background-color: rgb(71, 66, 66); padding: 20px; margin-left: 120px; margin-right: 120px;">
@@ -139,5 +172,28 @@
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
     </p>
 </div>
+
+<div id="lesson4">
+    <h1>PART 4: (CSS)BORDER</h1>
+    <p class ="dotted">This paragraph has a dotted border, it has a thick border, it has 4 colors for the border.</p>
+    <p class ="dashed">This paragraph has a dashed border, it has a medium border, it uses hex values for the color.</p>
+    <p class="solid">This paragraph has a solid border, it has a border width of 5px, it uses rgb values for the color.</p>
+    <p class="sides">This paragraph has different border styles for every side.</p>
+    <p class="shorthand-border"> This paragraph uses border's shorthand property for easier styling.</p>
+    <p class="rounded"> This paragraph has a rounded border using the radius property.</p>
+</div>
+
+<div id="lesson5">
+
+</div>
+
+<div id="lesson6">
+
+</div>
+
+<div id="lesson7">
+
+</div>
+
 </body>
 </html>
