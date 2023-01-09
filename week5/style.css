@@ -1,0 +1,46 @@
+body {
+    font-family: 'Chivo', sans-serif;
+    font-size: 20px;
+    background-image: url(img/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+ul {
+    list-style-type: none;
+    width: 1855px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(203, 215, 240, 0.9);
+  }
+li {
+    float: right;
+    padding: 0px 10px;
+}
+  
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(231, 231, 211);
+}
+#logo {
+    padding-right: 0px;
+    width: 80px;
+    height: auto;
+}
+#com-name {
+    padding: 15px 0px;
+    padding-right: 1000px;
+    margin: 0;
+}
