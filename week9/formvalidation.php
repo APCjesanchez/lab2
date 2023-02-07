@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>  
 <html>
 <head>
@@ -99,34 +98,37 @@ echo "<br>";
 echo $comment;
 echo "<br>";
 echo $gender;
+?>
 
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
-
 	$servername = "localhost";
 	$username = "webprogss211";
 	$password = "webprogss211";
 	$dbname = "webprogss211";
-
+	
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection
 	if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 	}
-
-	$sql = "INSERT INTO jesanchez_myguests (firstname, lastname, email)
-	VALUES ('$name', ' ', '$email')";
-
+	
+	$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
+	VALUES ('$name','$email','$website','$comment','$gender')";
+	
 	if ($conn->query($sql) === TRUE) {
 	echo "New record created successfully";
 	} else {
 	echo "Error: " . $sql . "<br>" . $conn->error;
 	}
-
-	$conn->close();
+	
+	$conn->close();	
+	
 }
 ?>
+
 
 </body>
 </html>
