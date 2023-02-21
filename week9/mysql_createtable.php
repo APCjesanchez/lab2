@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
+$servername = "192.168.150.213";
 $username = "webprogss211";
-$password = "webprogss211";
+$password = "fancyR!ce36";
 $dbname = "webprogss211";
 
 // Create connection
@@ -14,9 +14,11 @@ if ($conn->connect_error) {
 // sql to create table
 $sql = "CREATE TABLE jesanchez_myguests (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
+name VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+website VARCHAR(100),
+comment TEXT,
+gender VARCHAR(30),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
